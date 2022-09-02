@@ -54,5 +54,22 @@ function webdesign() {
     blur.classList.toggle('blur')
 }
 
+function form_submit(){
+    const model =document.getElementById('form_send')
+    model.classList.toggle('form_send_open')
+    const blur = document.getElementById('sec')
+    blur.classList.toggle('blur')
+}
 
+function SendMail() {
+    var params = {
+      from_name:document.getElementById('name').value,
+      email_id:document.getElementById('email').value,
+      message:document.getElementById('Message').value,
+      to_name: "mohamed Shabil",
+    }
+    emailjs.send('service_1rc33bn','template_oyd52bl',params).then((res) =>{
+      form_submit();
+    })
+  }
 
