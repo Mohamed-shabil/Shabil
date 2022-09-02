@@ -959,12 +959,21 @@ body {
     justify-content: space-around;
 }
 .project_card{
-    width: 300px;
+    max-width: 300px;
+    width: 95%;
     height: auto;
     border-radius: 20px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     margin: 20px 30px;
     padding: 5px;
+}
+@media only screen and (max-width:980px){
+    .projects .row{
+        width: 90% !important;
+    }
+    .project_card{
+        margin: 20px 0px;
+    }
 }
 .project_card .media img{
     width:100%;
