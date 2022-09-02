@@ -44,7 +44,8 @@ body {
     background-color: rgba(17, 24, 39, 1) !important;
 }
 .blur{
-    background-color: rgba(51, 51, 51, 0.432);
+    background-color: rgba(51, 51, 51, 0.432); 
+    filter: blur(0.8);
     z-index: 100;
 }
 .header {
@@ -414,20 +415,21 @@ body {
     text-align: center;
     border-radius: 8px;
     width: 138px;
-    height: 40px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: 0.3s;
     margin-bottom: 50px;
+    padding: 5px;
     background-color: #6e57e0;
     text-decoration: none;
     color: #fff;
 }
 
 .contact-btn:hover {
-    background-color: #5743ca;
+    box-shadow: 1px 1px 33px 0px rgba(110,87,224,0.75);
     color: #fff;
 }
 
@@ -552,8 +554,9 @@ body {
 }
 
 .cv-button {
+    position: relative;
     margin-top: 20px;
-    width: 70%;
+    width: 60%;
     height: 50px;
     border-radius: 10px;
     background-color: #6e57e0;
@@ -563,16 +566,30 @@ body {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: width 0.3s;
+    outline: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
+    transition: 0.3s;
 }
-
-.down-icon {
-    font-size: 20px;
-    padding-left: 10px;
+.cv-button:hover{
+    box-shadow: 1px 1px 33px 0px rgba(110,87,224,0.75);
 }
-
-.cv-button:hover {
-    background-color: #8c7be0;
+.tick-icon{
+    display: none;
+    font-size: 22px;
+}
+.cv-button:focus{ 
+    width: 50px;
+    background-color: #44c08a;
+    border-radius: 50%;
+}
+.cv-button:focus .cv-btn-txt{
+    display:none;
+}
+.cv-button:focus .tick-icon{
+    display: block;
+    animation-delay: 0.5s;
 }
 
 @media only screen and (max-width:768px) {
@@ -885,11 +902,11 @@ body {
 }
 
 .skill-css {
-    width: 92%;
+    width: 95%;
 }
 
 .skill-javscript {
-    width: 80%;
+    width: 90%;
 }
 
 .skill-react {
@@ -897,11 +914,11 @@ body {
 }
 
 .skill-firebase {
-    width: 80%;
+    width: 75%;
 }
 
 .skill-node {
-    width: 70%;
+    width: 90%;
 }
 
 .skill-tail {
@@ -918,51 +935,7 @@ body {
 
 /* Projects */
 
-.projects{
-    height: auto;
-    width: 100%;
-}
-.project-rows{
-    padding: 0 90px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.project-card{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 15px ;
-    width: 352px;
-    height: 300px;
-    z-index: 1;
-    margin:  50px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-.card-media{
-    width: 100%;
-}
-.card-image{
-    width: 350px;
-    height: 200px;
-    border-radius:15px 15px 0 0;
-}
-.project-txt{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.project-txt h3{
-    font-weight: 500;
-    text-align: center;
-}
-.project-txt a{
-    color: #6e57e0;
-    text-decoration: none;
-}
+
 
 
 /* Services */

@@ -6,8 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=1, initial-scale=1.0">
   <title>Mohamed Shabil</title>
-  <!--Animation css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
   <!----css---->
   <link rel="stylesheet" href="style.css">
   <!--fontawesome-->
@@ -16,6 +15,10 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!--Bootstrap Icon-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!-- Swiper js -->
+  <link
+      rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+ 
 </head>
 
 <body>
@@ -79,10 +82,12 @@
         <div class="txt">
           <h2 class="intro-txt">Hello, I'am Shabil</h2>
           <h4 class="profession"><span class="type"></span></h4>
-          <p class="sub-txt"><!----------------------------------------------------------------></p>
-          <a href="#" class="contact-btn">Contact Me <span class="space"></span><i class="fa fa-paper-plane-o"></i></a>
+          <p class="sub-txt">Web developer, with extensive knowledge, working in web
+            technologies, delivering quality work.</p>
+          <a href="#contact" class="contact-btn">Contact Me <span class="space"></span><i class="fa fa-paper-plane-o"></i></a>
         </div>
       </div>
+
       <div class="img-box">
         <svg class="blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -97,7 +102,7 @@
                 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-            <image class="home-blob-img" x='4' y='18' xlink:href="Public/Me.png" />
+            <image class="home-blob-img" x='-9' y='10' xlink:href="Public/Portfolio.png" />
           </g>
         </svg>
       </div>
@@ -127,7 +132,11 @@
 
 
             </ul>
-            <a href="#" class="cv-button">Download CV <i class="bi bi-download down-icon"></i></a>
+            <!-- <a href="#" class="cv-button">Download CV <i class="bi bi-download down-icon"></i></a> -->
+            <a href="Public/shabil.pdf" download class="cv-button" >
+               <span class="cv-btn-txt">Download CV <i class="bi bi-download down-icon"></i></span>
+               <i class="bi bi-check2 tick-icon"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -181,7 +190,7 @@
               <div class="skill-data">
                 <div class="skill-titles">
                   <h3 class="skill-name">JavaScript</h3>
-                  <span class="skill-number">85%</span>
+                  <span class="skill-number">95%</span>
                 </div>
                 <div class="skill-bar">
                   <div class="skill-percentage skill-javscript"></div>
@@ -217,7 +226,7 @@
               <div class="skill-data">
                 <div class="skill-titles">
                   <h3 class="skill-name">Fire Base</h3>
-                  <span class="skill-number">85%</span>
+                  <span class="skill-number">75%</span>
                 </div>
                 <div class="skill-bar">
                   <div class="skill-percentage skill-firebase"></div>
@@ -227,7 +236,7 @@
               <div class="skill-data">
                 <div class="skill-titles">
                   <h3 class="skill-name">Node Js</h3>
-                  <span class="skill-number">70%</span>
+                  <span class="skill-number">90%</span>
                 </div>
                 <div class="skill-bar">
                   <div class="skill-percentage skill-node"></div>
@@ -280,103 +289,14 @@
 
     <!--Projects-->
 
-    <section class="projects">
-      <div class="main-txt" id="projects">
-        <h3 class="service-main-title">Projects</h3>
-      </div>
-      <div class="project-rows">
-
-
-        <div class="project-card">
-          <div class="card-media">
-            <img src="Public/todo.PNG" class="card-image" alt="" srcset="">
-          </div>
-          <div class="project-txt">
-            <br>
-            <h3>Todo App</h3>
-            <a href="https://todoapp-ms.herokuapp.com/">View app<i class="bi bi-arrow-right-short"></i></a>
-          </div>
-        </div>
+    <div class="projects">
+      <div class="row">
         
-        <div class="project-card">
-          <div class="card-media">
-            <img src="Public/newletter.PNG" class="card-image" alt="" srcset="">
-          </div>
-          <div class="project-txt">
-            <br>
-            <h3>News Letter App</h3>
-            <a href=" https://newsletter-ms.herokuapp.com/">View app<i class="bi bi-arrow-right-short"></i></a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="card-media">
-            <img src="Public/weather app.png" class="card-image" alt="" srcset="">
-          </div>
-          <div class="project-txt">
-            <br>
-            <h3>Weather App</h3>
-            <a href=" https://weather--ms.herokuapp.com/">View app<i class="bi bi-arrow-right-short"></i></a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="card-media">
-            <img src="Public/letsmeetEdited.png" class="card-image" alt="" srcset="">
-          </div>
-          <div class="project-txt">
-            <br>
-            <h3>Let's Meet</h3>
-            <a href="https://letsmeet-ms.netlify.app">View app<i class="bi bi-arrow-right-short"></i></a>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="card-media">
-            <img src="Public/Ecommerce.PNG" class="card-image" alt="" srcset="">
-          </div>
-          <div class="project-txt">
-            <br>
-            <h3>Ecommerce</h3>
-            <a href="#">On Progress...<i class="bi bi-person-workspace"></i></a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="card-media">
-            <img src="Public/Bexfolio.PNG" class="card-image" alt="" srcset="">
-          </div>
-          <div class="project-txt">
-            <br>
-            <h3>Bexfolio</h3>
-            <a href="https://playbulltraders.in">View app<i class="bi bi-arrow-right-short"></i></a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="card-media">
-            <img src="Public/Disney.PNG" class="card-image" alt="" srcset="">
-          </div>
-          <div class="project-txt">
-            <br>
-            <h3>Disney + Hotstar Clone</h3>
-            <a href="https://hotstarclone-ms.netlify.app/">View app<i class="bi bi-arrow-right-short"></i></a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="card-media">
-            <img src="Public/Ping me.PNG" class="card-image" alt="" srcset="">
-          </div>
-          <div class="project-txt">
-            <br>
-            <h3>Ping Me</h3>
-            <a href="#">View app<i class="bi bi-arrow-right-short"></i></a>
-          </div>
-        </div>
-
       </div>
-    </section>
-
+    </div>
+    
+<!-- Projects Carosel -->
+    
 
     <!-- Service -->
 
@@ -415,7 +335,7 @@
 
         <section class="pop" id="Popup">
           <div class="ser-svg">
-            <img src="Public/web-design (1).png" alt="" srcset="">
+            <img src="Public/web-design.png" alt="" srcset="">
           </div>
           <div class="Head-title">
             <span class="head-span">
@@ -492,22 +412,26 @@
   </section>
   <script src="typed.js"></script>
   <script src="app.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbznG-7FFYQZoaIrNjDNRuhDTuYbsqTJ-RH6SB5OBdPmsP2pZlY46AD3ocHQ5HZ_A0I/exec'
-    const form = document.forms['google-sheet']
-
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response => alert("You have successfully submitted."))
-        .catch(error => console.error('Error!', error.message))
-    })
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>    
+  var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
     var typed = new Typed('.type', {
-      strings: ['Full stack developer',
+      strings: ['Full stack Engineer',
         'Web Designer',
         'Freelancer',
         'Wordpress Developer'],
