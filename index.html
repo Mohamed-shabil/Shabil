@@ -9,12 +9,11 @@
   <link rel="icon" type="image/x-icon" href="/Public/new-Capture.png">
   <!----css---->
   <link rel="stylesheet" href="style.css">
-  <!--fontawesome-->
+  <!-- fontawesome
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!--Bootstrap Icon-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+ 
   
 </head>
 
@@ -33,7 +32,9 @@
           <li><a href="#projects" class="cool-link">Projects</a></li>
           <li><a href="#service" class="cool-link">Services</a></li>
           <li><a href="#contact" class="cool-link">Contact</a></li>
-          <li><a class="cool-link" onclick="theme()"><i class="bi bi-moon" id="nav-top-icon"></i></a>
+          <li><a class="cool-link" onclick="theme()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
+          </svg></a>
           </li>
         </ul>
       </div>
@@ -41,15 +42,31 @@
     <!-- header for Mobile -->
     <section>
       <div class="grid-container" id="grid-container" style="grid-auto-flow: row;">
-        <div class="item1"> <a href="#Home" class="nav-link"><i class="bi bi-house"><br></i>Home</a></div>
-        <div class="item2"> <a href="#About" class="nav-link"><i class="bi bi-person"><br></i>About</a></div>
-        <div class="item3"> <a href="#skills" class="nav-link"><i class="bi bi-file-earmark"><br></i>Skills</a></div>
-        <div class="item3"> <a href="#projects" class="nav-link"><i class="bi bi-file-earmark"><br></i>Projects</a>
+        <div class="item1"> <a href="#Home" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+          <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+        </svg><br>Home</a></div>
+        <div class="item2"> <a href="#About" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+          <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+        </svg><br>About</a></div>
+        <div class="item3"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark" viewBox="0 0 16 16">
+          <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"/>
+        </svg><br>Skills</a></div>
+        <div class="item3"> <a href="#projects" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award" viewBox="0 0 16 16">
+          <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"/>
+          <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+        </svg><br>Projects</a>
         </div>
-        <div class="item5"> <a href="#service" class="nav-link"><i class="bi bi-briefcase"><br></i>Services</a></div>
-        <div class="item7"> <a href="#contact" class="nav-link"><i class="bi bi-phone"><br></i>Contact</a></div>
+        <div class="item5"> <a href="#service" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+          <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"/>
+        </svg><br>Services</a></div>
+        <div class="item7"> <a href="#contact" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+          <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+          <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+        </svg><br>Contact</a></div>
         <div class="item8"></div>
-        <div class="close-btn-div"><a class="close-btn" onclick="toggle()"><i class="close bi bi-x"></i></a>
+        <div class="close-btn-div"><a class="close-btn" onclick="toggle()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+        </svg></a>
         </div>
       </div>
     </section>
@@ -60,9 +77,13 @@
       <div class="app-div">
         <div class="item6">
             <a class="nav-link" onclick="theme()">
-            <i class="bi bi-moon" id="dark-theme-icon"><br></i></a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
+              </svg></a>
         </div>
-        <a class="app" id="app" onclick="toggle()"><i class="bi bi-grid"></i></a></i>
+        <a class="app" id="app" onclick="toggle()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid" viewBox="0 0 16 16">
+          <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+        </svg></a></i>
       </div>
     </section>
 
@@ -70,9 +91,19 @@
     <section id="Home" class="hero-Section">
       <div class="social-media-icon">
         <ul class="sci">
-          <li><a href="https://instagram.com/mohamed_shabil_?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/mohamed-shabil-096390216"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-          <li><a href="https://github.com/Mohamed-shabil"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+          <li><a href="https://instagram.com/mohamed_shabil_?igshid=YmMyMTA2M2Y="><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+          </svg></a></li>
+          <li><a href="https://www.linkedin.com/in/mohamed-shabil-096390216">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+          </svg>
+          </a></li>
+          <li><a href="https://github.com/Mohamed-shabil">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+          </a></li>
         </ul>
       </div>
       <div class="text-box">
@@ -81,7 +112,10 @@
           <h4 class="profession"><span class="type"></span></h4>
           <p class="sub-txt">Web developer, with extensive knowledge, working in web
             technologies, delivering quality work.</p>
-          <a href="#contact" class="contact-btn">Contact Me <span class="space"></span><i class="fa fa-paper-plane-o"></i></a>
+          <a href="#contact" class="contact-btn">Contact Me <span class="space"></span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+            </svg></a>
         </div>
       </div>
 
@@ -99,7 +133,7 @@
                 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-            <image class="home-blob-img" x='-9' y='10' xlink:href="Public/Portfolio.png" />
+            <image class="home-blob-img" x='-20' y='-41' xlink:href="Public/Profile pic.png" />
           </g>
         </svg>
       </div>
@@ -111,19 +145,18 @@
       <p class='sec-intro'>Let me introduce myself</p>
       <div class="about-data row">
         <div class="img-about column">
-          <img class="hero-about" src="Public/about-img.jpg" alt="">
+          <img class="hero-about" src="Public/Portfolio.jpg" alt="">
         </div>
         <div class="about-txt-data column">
-          <p class="about-txt">Web developer, with extensive knowledge and three years of experience, working in web
-            technologies and Ui / Ux design, delivering quality work.</p>
+          <p class="about-txt">I am a dedicated web developer with 6 months of experience in the MERN stack. Passionate about creating user-friendly and visually appealing web applications that provide exceptional experiences. Committed to continuous learning and staying up-to-date with industry trends.</p>
           <div class="project">
             <ul class="project-list">
               <li>
-                <h1 class="no">03</h1>
-                <p class="discription">Years of <br> experience</p>
+                <h1 class="no">06</h1>
+                <p class="discription">Months of <br> experience</p>
               </li>
               <li>
-                <h1 class="no">10+</h1>
+                <h1 class="no">3+</h1>
                 <p class="discription">Completed <br> project</p>
               </li>
 
@@ -131,8 +164,14 @@
             </ul>
             <!-- <a href="#" class="cv-button">Download CV <i class="bi bi-download down-icon"></i></a> -->
             <a href="Public/shabil_shabil-2_merged_compressed_2.pdf" download class="cv-button" >
-               <span class="cv-btn-txt">Download CV <i class="bi bi-download down-icon"></i></span>
-               <i class="bi bi-check2 tick-icon"></i>
+               <span class="cv-btn-txt">Download CV 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="down-icon bi bi-download" viewBox="0 0 16 16">
+                  <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                  <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                </svg></span>
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill tick-icon" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+              </svg>
             </a>
           </div>
         </div>
@@ -155,11 +194,15 @@
           <!-- Skill-1 -->
           <div class="skill-content ">
             <div class="skill-header " onclick="skills_frontend()">
-              <i class="bi bi-code-slash skill-icon"></i>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-code-slash skill-icon" viewBox="0 0 16 16">
+                <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
+              </svg>
               <div>
                 <h1 class="skill-title">Frontend Development</h1>
               </div>
-              <i class="bi bi-chevron-compact-down skill-arrow" id="skill-arrow"></i>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" id="skill-arrow" fill="currentColor" class="skill-arrow bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/>
+              </svg>
             </div>
 
             <div class="skill-list-open grid" id="skill-front">
@@ -211,11 +254,16 @@
           <!-- Skill-2 -->
           <div class="skill-content">
             <div class="skill-header" onclick="skills_backend()">
-              <i class="bi bi-hdd-network skill-icon"></i>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-hdd-network skill-icon" viewBox="0 0 16 16">
+                <path d="M4.5 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zM3 4.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2H8.5v3a1.5 1.5 0 0 1 1.5 1.5h5.5a.5.5 0 0 1 0 1H10A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5H.5a.5.5 0 0 1 0-1H6A1.5 1.5 0 0 1 7.5 10V7H2a2 2 0 0 1-2-2V4zm1 0v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1zm6 7.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5z"/>
+              </svg>
               <div>
                 <h1 class="skill-title">Backend Development</h1>
               </div>
-              <i class="bi bi-chevron-compact-down skill-arrow" id="skill-arrow2"></i>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" id="skill-arrow2" fill="currentColor" class="skill-arrow bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/>
+              </svg>
             </div>
 
             <div class="skill-list grid " id="skill-back">
@@ -246,11 +294,16 @@
           <!-- skill-3 -->
           <div class="Frame-work skill-content">
             <div class="skill-header" onclick="skills_frame()">
-              <i class="bi bi-layout-text-window-reverse skill-icon"></i>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="skill-icon bi bi-layout-text-window-reverse" viewBox="0 0 16 16">
+                <path d="M13 6.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm0 3a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm-.5 2.5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5z"/>
+                <path d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM2 1a1 1 0 0 0-1 1v1h14V2a1 1 0 0 0-1-1H2zM1 4v10a1 1 0 0 0 1 1h2V4H1zm4 0v11h9a1 1 0 0 0 1-1V4H5z"/>
+              </svg>
               <div>
                 <h1 class="skill-title">Frame work</h1>
               </div>
-              <i class="bi bi-chevron-compact-up skill-arrow skill-arrow-animation" id="skill-arrow3"></i>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" id="skill-arrow3" fill="currentColor" class="skill-arrow bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/>
+              </svg>
             </div>
 
             <div class="skill-list grid " id="skill-frame">
@@ -286,247 +339,91 @@
 
     <!--Projects-->
 
-    <div class="projects">
+    <div class="projects" id="projects">
       <h2>Projects</h2>
       <div class="row">
 
-        <!-- Masc app -->
+        <!-- Youtube app -->
 
         <div class="project_card">
           <div class="media">
-            <img src="Public/mascapp.jpg" alt="">
+            <img src="Public/YOUTUBE.jpg" alt="">
           </div>
           <div class="content">
-            <h3>Masc app 2.0</h3>
-            <p>it is a mobile application that developed for
-              my college to give the all informations about 
-              programes that my college provides and serve
-               the study material for students 
+            <h3>Youtube</h3>
+            <p>A YouTube clone created with HTML and CSS, 
+              focusing on replicating the visual appearance
+               of the popular video-sharing platform, although
+                it is not responsive. 
             </p>
               <div class="techs">
-                <span>React Native</span>
-                <span>Expo</span> 
-                <span>Node js</span> 
-                <span>express</span>
-                <span>react</span> 
-                <span>REST api</span> 
-                <span>Jwt</span> 
+                <span>html5</span>
+                <span>css3</span> 
               </div>
-            <a href="#">On Progress<i class="bi bi-arrow-right"></i></a>
+            <a href="#">View App<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg></a>
           </div>
         </div>
 
-        <!-- Aj Retouch -->
+        <!-- Dunzo -->
 
 
         <div class="project_card">
           <div class="media">
-            <img src="Public/aj-retouch.jpg" alt="">
+            <img src="Public/DUNZO.jpg" alt="">
           </div>
           <div class="content">
-            <h3>AJ Retouch</h3>
-            <p>it's simple portfolio website developed for my
-              client to showcase his works. it comes with an admin panel
-              to dynamically add new works
+            <h3>Dunzo</h3>
+            <p>A Dunzo clone built using HTML and CSS,
+               aimed at recreating the visual appearance
+                of the on-demand delivery app, albeit 
+                without responsive design capabilities.
             </p>
               <div class="techs">
-                <span>Ejs</span>
-                <span>Node js</span> 
-                <span>Express js</span> 
-                <span>Mongodb</span>
-                <span>Passport js</span> 
+                <span>html5</span>
+                <span>css3</span>  
               </div>
-            <a href="https://github.com/Mohamed-shabil/Ajretouch">View app<i class="bi bi-arrow-right"></i></a>
+            <a href="https://github.com/Mohamed-shabil/Ajretouch">View app<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg></a>
           </div>
         </div>
 
 
-        <!-- Bexfolio -->
+        <!-- ShipRocket -->
+
         <div class="project_card">
           <div class="media">
-            <img src="Public/Bexfolio.jpg" alt="">
+            <img src="Public/SHIPROCKET.jpg" alt="">
           </div>
           <div class="content">
-            <h3>Bexfolio</h3>
-            <p>Bexfolio is a Ecommerce application developed for client 
-              to sell Forex Trading course and membership based mentorship</p>
+            <h3>Ship Rocket</h3>
+            <p>A responsive Ship Rocket website clone
+               created using HTML, CSS, and Bootstrap.
+               This project replicates the visual appearance
+               of the original website, focusing on delivering
+               an engaging user experience.</p>
               <div class="techs">
-                <span>Wordpress</span>
-                <span>Elementor</span> 
-                <span>Woocommerce</span> 
-                <span>Stripe</span> 
-                <span>Ultimate membership pro</span> 
+                <span>html5</span>
+                <span>css3</span> 
+                <span>Boostrap5</span> 
+                
               </div>
-            <a href="https://bexfolio.com">View app<i class="bi bi-arrow-right"></i></a>
+            <a href="https://bexfolio.com">View app<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg></a>
           </div>
         </div>
         
 
-        <!-- Lets meet  -->
 
-        <div class="project_card">
-          <div class="media">
-            <img src="Public/letsmeetEdited.jpg" alt="">
-          </div>
-          <div class="content">
-            <h3>Lets meet</h3>
-            <p>its a simple and user friendly realtime video calling app. 
-              anyone who using this app can generate an id and we can call to that id</p>
-              <div class="techs">
-                <span>React js</span>
-                <span>Node js</span> 
-                <span>Socket.io</span>  
-              </div>
-            <a href="https://github.com/Mohamed-shabil/Lets-Meet">View app<i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <!-- Hotstar Clone -->
-
-        <div class="project_card">
-          <div class="media">
-            <img src="Public/Capture.jpg" alt="">
-          </div>
-          <div class="content">
-            <h3>Hotstar clone</h3>
-            <p>its a clone website of Disney+Hostar, fully developed
-              with an api , all the data in the web app is dynamic 
-              so it alsways up to date 
-            </p>
-              <div class="techs">
-                <span>React js</span>
-                <span>Jsx</span> 
-                <span>tmdb api</span>  
-              </div>
-            <a href="https://hotstarclone-ms.netlify.app/">View app<i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <!-- todo -->
-        <div class="project_card">
-          <div class="media">
-            <img src="Public/todo.jpg" alt="">
-          </div>
-          <div class="content">
-            <h3>Full Stack Todo List</h3>
-            <p>It's a simple full Stack todo list With create and 
-              delete options and database Integration.</p>
-              <div class="techs">
-                <span>Ejs</span>
-                <span>Node js</span> 
-                <span>Express</span> 
-                <span>Mongodb</span> 
-              </div>
-            <a href="https://todoapp-ms.herokuapp.com/">View app<i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
         
-        
-        <!-- Natural Wood -->
-  
-        <div class="project_card">
-          <div class="media">
-            <img src="Public/Nature-Wood-1-Compressed.jpg" alt="">
-          </div>
-          <div class="content">
-            <h3>Natural Wood</h3>
-            <p>Natural wood is a simple portfolio website 
-              developed for my client to showcase their works
-            </p>
-            <div class="techs">
-             <span>wordpress</span>
-             <span>Elementor</span> 
-            </div>
-            <a href="https://naturalwooddubai.com">View app<i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <!-- Ping me  -->
-        <div class="project_card">
-          <div class="media">
-            <img src="Public/Ping-me.jpg" alt="">
-          </div>
-          <div class="content">
-            <h3>Ping me</h3>
-            <p>it a simple group chat application ,all is connected to 
-              one room and anyone who open this app is connected
-              every one who using this app.
-            </p>
-            <div class="techs">
-             <span>node js</span>
-             <span>express</span> 
-             <span>socket.io</span> 
-            </div>
-            <a href="https://github.com/Mohamed-shabil/Ping-Me">View app<i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-        <!-- Wheather app -->
-
-        <div class="project_card">
-          <div class="media">
-            <img src="Public/weather-app.jpg" alt="">
-          </div>
-          <div class="content">
-            <h3>Wheather App</h3>
-            <p>its very simple and user friendly wheather application
-              , it will provide the best and accurate data from an api.   
-            </p>
-            <div class="techs">
-             <span>ejs</span>
-             <span>css</span> 
-             <span>node js</span> 
-             <span>express js</span> 
-             <span>open Weather api</span> 
-            </div>
-            <a href="#">View app<i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-        <!-- NewLetter app -->
-        <div class="project_card">
-          <div class="media">
-            <img src="Public/newletter.jpg" alt="">
-          </div>
-          <div class="content">
-            <h3>News Letter</h3>
-            <p>its just a News Letter component integrated with
-              mailchimp. all the data entered on the form is directly 
-              stored on the mailchimp.  
-            </p>
-            <div class="techs">
-             <span>ejs</span>
-             <span>css</span> 
-             <span>node js</span> 
-             <span>express js</span> 
-             <span>mailchimp</span> 
-            </div>
-            <a href="https://github.com/Mohamed-shabil/newsletter-ms">View app<i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-        <!-- signup page -->
-
-        <div class="project_card">
-          <div class="media">
-            <img src="Public/Signup.jpg" alt="">
-          </div>
-          <div class="content">
-            <h3>Frontend Form Validation</h3>
-            <p>its is simple app developed for an intership as a 
-              task  
-            </p>
-            <div class="techs">
-             <span>html</span>
-             <span>css</span> 
-             <span>JavaScript</span> 
-            </div>
-            <a href="https://mohamed-shabil.github.io/SignUp-Page-UI.io/">View app<i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-
 
       </div>
     </div>
     
-<!-- Projects Carosel -->
+
     
 
     <!-- Service -->
@@ -540,26 +437,40 @@
         </div>
         <div class="card-container">
           <div class="card">
-            <div class="card-icon"><i class="bi bi-grid-1x2"></i></div>
+            <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-1x2" viewBox="0 0 16 16">
+              <path d="M6 1H1v14h5V1zm9 0h-5v5h5V1zm0 9v5h-5v-5h5zM0 1a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm9 0a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1V1zm1 8a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1h-5z"/>
+            </svg></div>
             <div class="card-txt">
               <h4 class="card-main-txt">Web<br>Designing</h4>
-              <a onclick="webdesign()">View More<i class="bi bi-arrow-right-short"></i></a>
+              <a onclick="webdesign()">View More<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+              </svg></a>
             </div>
           </div>
 
           <div class="card">
-            <div class="card-icon"><i class="bi bi-hdd-rack"></i></div>
+            <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hdd-rack" viewBox="0 0 16 16">
+              <path d="M4.5 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zM3 4.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm2 7a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-2.5.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+              <path d="M2 2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h1v2H2a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1a2 2 0 0 0-2-2h-1V7h1a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm13 2v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm0 7v1a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm-3-4v2H4V7h8z"/>
+            </svg></div>
             <div class="card-txt">
               <h4 class="card-main-txt">Web <br>Development</h4>
-              <a onclick="webdesign()">View More<i class="bi bi-arrow-right-short"></i></a>
+              <a onclick="webdesign()">View More<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+              </svg></a>
             </div>
           </div>
 
           <div class="card">
-            <div class="card-icon"><i class="bi bi-window-sidebar"></i></div>
+            <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-window-sidebar" viewBox="0 0 16 16">
+              <path d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+              <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v2H1V3a1 1 0 0 1 1-1h12zM1 13V6h4v8H2a1 1 0 0 1-1-1zm5 1V6h9v7a1 1 0 0 1-1 1H6z"/>
+            </svg></div>
             <div class="card-txt">
               <h4 class="card-main-txt">Wordpress<br>Development</h4>
-              <a onclick="webdesign()">View More<i class="bi bi-arrow-right-short"></i></a>
+              <a onclick="webdesign()">View More<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+              </svg></a>
             </div>
           </div>
         </div>
@@ -610,25 +521,28 @@
         <div class="form">
           <div class="form-container">
             <!-- <form> -->
-              <input type="text" id="name" name="name" placeholder="Name" class="contact-input" required>
-              <input type="email" id="email" name="email" placeholder="Email" class="contact-input" required>
+              <p id="error_name" class="formError"></p>
+              <input type="text" required id="name" name="name" placeholder="Name" class="contact-input" >
+              <span id="error_email" class="formError"></span>
+              <input type="email" id="email" name="email" placeholder="Email" class="contact-input">
+              <span id="error_message" class="formError"></span>
               <textarea name="Message" id="Message" cols="30" rows="5" placeholder="Message ..." class="contact-txtarea"
-                required></textarea>
-              <input type="submit" value="submit" name="submit" onclick="SendMail()" class="sbmt-btn">
+                ></textarea>
+              <input id ="submit" type="submit" onclick="return validate()" value="submit" name="submit" class="sbmt-btn">
             <!-- </form> -->
           </div>
         </div>
       </div>
     </section>
 
-    <div class="form_send" id="form_send">
+    <!-- <div class="form_send" id="form_send">
       <span class="form_close" onclick="form_submit()"><i class="bi bi-x"></i></span>
       <div class="form_icon">
         <i class="bi bi-check2-circle"></i>
       </div>
       <p>your message has been Submitted</p>
      
-    </div>
+    </div> -->
 
     <!-- Footer -->
     <footer>
@@ -661,7 +575,7 @@
       strings: ['Full stack Engineer',
         'Web Designer',
         'Freelancer',
-        'Wordpress Developer'],
+        ],
       typeSpeed: 60,
       backSpeed: 60,
       loop: true,

@@ -61,6 +61,73 @@ function form_submit(){
     blur.classList.toggle('blur')
 }
 
+
+
+function validate(){
+    const name = document.getElementById('name').value;
+    const nameError = document.getElementById('error_name');
+    const email = document.getElementById('email').value;
+    const emailError = document.getElementById('error_email');
+    const message = document.getElementById('Message').value;
+    const messageError = document.getElementById('error_message');
+
+    const patternName = /[0-9(),-_.,]/;
+
+    if(name.length<=3){
+        nameError.innerHTML = "Name Must be 3 or more character longer"
+        return false;
+    }else{
+        nameError.innerHTML="";
+    }
+
+    if(patternName.test(name)){
+        nameError.innerHTML = "Name Cannot contain any Numbers and special charcters";    
+        return false;
+    }else{
+        nameError.innerHTML = "";
+    }
+
+    if(email==""||email==null){
+        emailError.innerHTML = "email Must be Filled"
+        return false;
+    }else{
+        emailError.innerHTML = "";
+    }
+    
+    if(email.includes("@"&&".com")){
+        emailError.innerHTML="";
+    }else{
+        emailError.innerHTML = "email Must contain @ and .com"
+        return false;
+    }
+
+    if(message==""||message==null){
+        messageError.innerHTML = "message Must be Filled" 
+        return false;
+    }else{
+        messageError.innerHTML = "";
+    }
+
+    if(message.length <= 4){
+        console.log('Woring broih');
+        messageError.innerHTML = "message Must greater than 4 character Long" 
+        return false;
+    }else{
+        messageError.innerHTML = ""; 
+    }
+
+    SendMail();
+
+    document.getElementById('name').value='';
+    document.getElementById('email').value='';
+    document.getElementById('Message').value='';
+    
+    console.log("done")
+
+    return true;
+}
+
+
 function SendMail() {
     var params = {
       from_name:document.getElementById('name').value,
@@ -68,8 +135,12 @@ function SendMail() {
       message:document.getElementById('Message').value,
       to_name: "mohamed Shabil",
     }
-    emailjs.send('service_1rc33bn','template_oyd52bl',params).then((res) =>{
-      form_submit();
+    emailjs.send("service_deu8c2s","template_oyd52bl",params).then((res) =>{
+      if(res.status == 200){
+        alert("Your message has been sent Successfully");
+      }else{
+        alert("Something Went Wrong Please try again")
+      }
     })
   }
 
