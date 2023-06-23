@@ -71,7 +71,8 @@ function validate(){
     const message = document.getElementById('Message').value;
     const messageError = document.getElementById('error_message');
 
-    const patternName = /[0-9(),-_.,]/;
+    const patternName = /[\w\s\][,][0-9]/gi;
+    const patternEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 
     if(name.length<=3){
         nameError.innerHTML = "Name Must be 3 or more character longer"
@@ -94,10 +95,10 @@ function validate(){
         emailError.innerHTML = "";
     }
     
-    if(email.includes("@"&&".com")){
+    if(patternEmail.test(email)){
         emailError.innerHTML="";
     }else{
-        emailError.innerHTML = "email Must contain @ and .com"
+        emailError.innerHTML = "Invalid email Check your mail again"
         return false;
     }
 
